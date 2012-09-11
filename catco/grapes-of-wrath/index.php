@@ -1,15 +1,20 @@
 <?php
+/**
+ * Grapes of Wrath page
+ *
+ * By: Alex Heck
+ *
+ */
 
-include($DOCUMENT_ROOT . "header.php");
-
-
+// Get the global header containing the navigation bar
+require($_SERVER['DOCUMENT_ROOT']."catco/includes/header.php");
 ?>
 
 <h1 class="header-title"><em>The Grapes of Wrath</em> 2010</h1>
 
 <blockquote>
 <em>Note: This web page was initially constructed in 2001. I have updated it for use in the Wexner Center's 2010-2011 Creative Campus Innovations partnership with the NYC-based The Builders Association, which is producing</em> "ROAD TRIP (Grapes of Wrath)."<br /><br />
-See for contrast: <a href="/catco/grapes-of-wrath/reverse-migration-articles.html">Reverse Migration articles</a><br /><br />
+See for contrast: <a href="/catco/grapes-of-wrath/reverse-migration-articles.php">Reverse Migration articles</a><br /><br />
 <em><p class="align-right">Professor William R. Childs, August 2010.</p></em>
 </blockquote>
 
@@ -1873,51 +1878,9 @@ href="http://newdeal.feri.org/index.htm">http://newdeal.feri.org/index.htm</a></
 <p><a href="http://www.netxn.com/~weedpatch">http://www.netxn.com/~weedpatch</a></p>
 <p><a href="#TOC">Back To Table of Contents</a></p>
 
-</div>
-
-<div class="sidebar">
-<h2><a name=toc></a>Table of Contents</h2>
-<ul>
-<li><a href="#preface">Preface</a></li>
-<li><a href="#Introduction">Introduction</a></li>
-<li><a href="#America_in_the_1930s">America in the 1930s</a></li>
-<ul>
-<li>The Political-Economic Context</li>
-<li>Cultural Transformations</li>
-<li>New Deal and the Common Man</li>
-<li>Critics of the New Deal</li>
-</ul>
-<li><a href="#The_Documentary_Movement_in_the_1930s">The Documentary Movement</a></li>
-<li><a href="#John_Steinbeck">John Steinbeck</a></li>
-<li><a href="#The_Novel">The Novel</a></li>
-<ul>
-<li>History</li>
-<li>Structure, Meanings, and Influences</li>
-<li>Is the novel representative of history?</li>
-<li>Dust Bowl</li>
-<li>Agriculture in California</li>
-<li>Migrant Patterns</li>
-<li>Migrant Life</li>
-</ul>
-<li><a href="#The_Film">The Film</a></li>
-<li><a href="#The_Play">The Play</a></li>
-<ul>
-<li>The Adaptor: Frank Galati</li>
-<li>Production History</li>
-<li>Critics' Views</li>
-<li>Other Productions by Frank Galati</li>
-</ul>
-<li><a href="#Catco_Approach">CATCO's Approach to the Production</a></li>
-<li><a href="#What_Happened_to_Okies">What Happened to the Okies?</a></li>
-<li><a href="#Migrants_in_Ohio">Migrants in Ohio</a></li>
-<li><a href="#Terms_of_Interest">Terms of Interest</a></li>
-<li><a href="#Questions_to_Consider">Questions to Consider</a></li>
-<li><a href="#Selected_References">Selected References/Suggestions for Reading</a></li>
-</ul>
-</div>
 
 <?php
-
-include("/footer.php");
-
+// Get the global footer and the corresponding sidebar
+require($_SERVER['DOCUMENT_ROOT']."catco/grapes-of-wrath/sidebar.php");
+require($_SERVER['DOCUMENT_ROOT']."catco/includes/footer.php");
 ?>
