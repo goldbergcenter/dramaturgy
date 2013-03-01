@@ -1,84 +1,148 @@
 @charset "utf-8";
 /*
-  Sitename: http://history.osu.edu/catco
+  Sitename: http://history.osu.edu/history-dramaturgy
   Author: Mitchell R.K. Shelton
+  Copyright 2013 The Ohio State University
 
   styles.css
-  Main styles for CATCO site
+  Main styles for History and Dramaturgy site
 */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~ Main Page ~ */
+/* ~ Core ~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~ */
-#main .center {
-  text-align: center;
+body {
+  font-size: 62.5%; /* 0.625 * 16px ~ 10px */
+  line-height: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 0px;
 }
-#main .clear {
+.clear {
   clear: both;
 }
-#main .container {
-  width: 960px;
-  margin: 0 auto;
-}
-#main .header {
-  background-color: #ddd;
-  color: #333;
-  padding: 10px;
-}
-#main .play-notes-image {
-  border: 1px solid #000;
-  margin: 0px 5px 5px 0px;
+.float-left {
   float: left;
 }
-#main .content {
-  width: 64.2%;
-  float: left;
-  background-color: #EEE;
-  color: #333;
-  padding: 2%;
+.float-right {
+  float: right;
 }
-#main .sibebar {
-  width: 28%;
-  float: left;
-  background-color: #ddd;
-  color: #333;
-  padding: 2%;
+.hd-align-right {
+  text-align: right;
 }
-/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~ Grapes of Wrath Section ~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
-#grapes .container {
-  max-width: 960px;
-  width: 100%;
-  margin: 0 auto;
-}
-#grapes .header-title {
+.hd-align-center {
   text-align: center;
 }
-#grapes .content {
+a:link,
+a:visited {
+  color: #900;
+  text-decoration: underline;
+}
+a:hover,
+a:active {
+  color: #f00;
+  text-decoration: underline;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~ Header ~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+#hd-header {
+  border-bottom: 1px solid #333;
+}
+#hd-header-content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#hd-title {
+  float: left;
+  font-size: 3em;
+}
+#hd-author {
+  padding-top: 15px;
+  float: right;
+  font-size: 1.2em;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~ Navigation ~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+#hd-nav {
+  background-color: #000;
+}
+#hd-nav-content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#hd-nav-list {
+  float: right;
+  margin: 0px;
+  padding: 5px;
+}
+.hd-nav-list-item {
+  list-style-type: none;
+  display: inline;
+  padding: 0px 0px 0px 25px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.hd-nav-link:link, .hd-nav-link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+.hd-nav-link:hover, .hd-nav-link:active {
+  text-decoration: underline;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~ Content ~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+#hd-main {
+  background-color: #EFEFEF;
+  padding: 5px;
+}
+#hd-main-content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+#hd-main-content-left {
   float: left;
   width: 70%;
 }
-#grapes .sidebar {
+#hd-sidebar {
   float: left;
-  width: 30%;
+  width: 29%;
+  padding-left: 5px;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
 }
-#grapes .image-container {
-  border: 1px solid #ccc;
-  padding: 10px;
-  background-color: #eee;
+.hd-image-portrait {
+  float: left;
+  margin: 0px 5px 5px 0px;
+  border: 1px solid #000;
 }
-#grapes .p-center {
+.hd-center-image {
   text-align: center;
+  font-size: 1.1em;
 }
-#grapes .img-border {
-  border: 1px solid #000;
+.hd-image-citation {
+  padding: 0px 20px 0px 20px;
+  text-align: left;
+  font-size: 0.8em;
 }
-#grapes .align-right {
-  text-align: right;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~ Footer ~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+#hd-footer {
+  border-top: 1px solid #333;
+  background-color: #fff;
 }
-#grapes .portrait {
-  float: left;
-  margin: 0px 10px 10px 0px;
-  border: 1px solid #000;
+#hd-footer-content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }

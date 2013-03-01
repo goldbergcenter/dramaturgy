@@ -1,7 +1,6 @@
 <?php
-
-require($_SERVER['DOCUMENT_ROOT']."catco/includes/header.php");
-
+require('global.php');
+require($header);
 ?>
 
 <div class=Section1>
@@ -26,7 +25,7 @@ src="Images/image001.gif" alt=CATCO v:shapes="_x0000_i1025"></a><b></b></p>
   <p align=center style='text-align:center'>Compiled, edited, and written by Bill Childs, Prof. of
     History, The Ohio State University (<a href="mailto:childs.1@osu.edu">childs.1@osu.edu</a>)</p>
   <br clear=all style='page-break-before:always'>
-  
+
   <p><b>Preface</b></p>
   <p>For
     every production, CATCO hires a dramaturg to collect information about the play
@@ -109,5 +108,5 @@ href="file:///C|/wamp/www/catco/complete-history-america/Index/Artists Biographi
 </div>
 
 <?php
-require($_SERVER['DOCUMENT_ROOT']."catco/includes/footer.php");
+require($footer);
 ?>
